@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cl": "commitlint --from HEAD~1 --to HEAD --verbose"
+    "cl": "commitlint --to ab2164b1e51efdf2df6feb1743c70550f692ddee --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }  
   }
 }
