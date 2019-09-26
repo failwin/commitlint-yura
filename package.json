@@ -1,0 +1,21 @@
+{
+  "name": "commitlint-yura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cl": "commitlint --from HEAD~1 --to HEAD --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^3.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint"
+    }  
+  }
+}
